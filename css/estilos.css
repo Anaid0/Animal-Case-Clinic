@@ -1,3 +1,9 @@
+/*COLORES PAGINA
+rgba(82,170,154,255)
+rgba(95,189,159,255)
+rgba(198,224,176,255)
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -27,11 +33,9 @@ body{
 
 header{
     width: 100%;
-    height: 600px;
+    height: 400px;
     background: #bc4e9d21;
-    background: -webkit-linear-gradient(to right hsla(340, 95%, 50%, 0.541), hsla(317, 45%, 52%, 0.664)), url(.Imagenes/portada2.jpg);
-    /* Falta mirar lo de la url para la imagen de la portada */
-    background: linear-gradient(to right hsla(340, 95%, 50%, 0.541), hsla(317, 45%, 52%, 0.664)), url(./Imagenes/portada2.jpg);
+    background: #88c2b3;
     background-attachment: fixed;
     position: relative;
     
@@ -56,7 +60,7 @@ nav > a:hover{
 
 header .textos-header{
     display: flex;
-    height: 430px;
+    height: 270px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -66,6 +70,7 @@ header .textos-header{
 
 .textos-header h1{
     font-size: 50px;
+    align-items: top;
     color: #fff;
 }
 
@@ -433,4 +438,87 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+}
+
+/*LOGIN*/
+.bodyLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(82,170,154,255);    ;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorLogin{
+    width: 40%;
+    padding: 30px 40px;
+    background-color: transparent;
+    border: 2px solid rgb(225, 255, 255, .5);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 10px;
+}
+
+.contenedor h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 2px;
+
+}
+
+.contenedor .cajaLogin{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    padding: 0px;
+    color: white;
+}
+
+.cajaLogin input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(225, 255, 255);
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.cajaLogin input::placeholder{
+    color: rgba(255, 255, 255, 0.445);
+}
+
+.cajaLogin i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.cajaLogin .recuerdame{
+   padding: 6px;
+    color: white;
+}
+
+.btnLogin{
+    width: 100%;
+    height: 45px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: white;
+    cursor: pointer; 
+    font-size: 16px;
+    color: black;
 }

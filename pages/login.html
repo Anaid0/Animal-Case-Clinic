@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/Images/logo-Principal.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Mascotas</title>
+</head>
+<body class="bodyLogin">
+
+    <section class="contenedorLogin">
+
+        <form action="../pages/admin.html" class="formulario">
+            <h1>Iniciar Sesión</h1>
+            <article class="cajaLogin">
+                <input type="text" placeholder="Usuario" id="usuario" required>
+                <i class='bx bxs-user'></i>
+            </article>
+            <article class="cajaLogin">
+                <input type="password" placeholder="Contraseña" id="contraseña" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </article>
+            <article class="recuerdame">
+                <input type="checkbox"> Recuérdame
+            </article>
+            <button type="button" id="btn-btnLogin" onclick="login()" class="btnLogin">Ingresar</button>
+        </form>
+    </section>
+    
+</body>
+<script src="../js/main.js"></script>
+</html>
